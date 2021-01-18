@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+.sidebar {
+  width: 200px;
+  padding: 20px;
+  border: 0 solid #000;
+  list-style: none;
+}
+
+.sidebar li {
+  border-radius: 10px;
+  /* background: rgb(196, 196, 196); */
+  font-weight: 600;
+  margin: 10px 10px;
+  font-size: 14px;
+  line-height: 60px;
+}
+
+.sidebar li.active {
+  background: blue;
+}
+.card {
+  color: black;
+  height: fit-content;
+  margin: 20px;
+  margin-top: 30px;
+  min-width: 180px;
+  max-width: 230px;
+  box-shadow: 1px -1px 60px 3px #0000000d;
+
+  flex: 1 1;
+  background: white;
+  padding: 0px 20px 20px 20px;
+  border-radius: 12px;
+}
+.cards {
+  margin-top: 20px;
+  flex-direction: row;
+  height: fit-content;
+  /* width: calc(100vw - 210px); */
+  flex-wrap: wrap;
+}
+.ico-col {
+  height: 40px;
+  width: 40px;
+  transform: translateY(-50%);
+  background: #27dba5;
+  border-radius: 50%;
+}
+.r {
+  background: #ff0000;
+}
+.g {
+  background: green;
+}
+.b {
+  background: blue;
+}
+.card:first-child {
+  position: relative;
+}
+.card .t1 {
+  text-align-last: left;
+  font-family: "calibri";
+}
+.card .t3 {
+  font-size: 11px;
+}
+.goal {
+  width: 11px;
+  height: 11px;
+  background: url(./../assets/goal.svg) no-repeat center center/contain;
+}
+.clo {
+  height: 10px;
+  width: 10px;
+  background: url(./../assets/clock.svg) no-repeat center center/contain;
+}
+.s-ico {
+  margin-right: 10px;
+}
