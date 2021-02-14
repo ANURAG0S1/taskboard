@@ -5,7 +5,7 @@ export class Classs extends Component {
     super(props);
 
     this.state = {
-      count: 1,
+      count: true,
     };
     // this.clickHandler = this.clickHandler.bind(this);
   }
@@ -17,11 +17,16 @@ export class Classs extends Component {
     });
   };
   render() {
-    return (
-      <div>
-        <button onClick={this.clickHandler.bind(this)}>click me</button>
-      </div>
-    );
+    if (this.state.count) {
+      return <h1>its worked</h1>;
+    } else {
+      return (
+        <div>
+          it did'nt worked
+          {/* <button onClick={this.clickHandler.bind(this)}>click me</button> */}
+        </div>
+      );
+    }
   }
 }
 

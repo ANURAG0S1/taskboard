@@ -5,17 +5,20 @@ import Sidebar from "./sidebar/Sidebar";
 import Content from "./content/Content";
 import Classcontent from "./Class/Classcontent";
 import Classs from "./class_comp/Classs";
+import ControlledInput from "./Controlled_input/ControlledInput";
+import Refelem from "./Ref/Ref";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Classs />
-      {/* <div className="flex">
+       <Refelem />
+     {/* <Navbar />
+   
+      <div className="flex"></div>
         <Sidebar />
-        <Content />
-        <Classcontent />
-      </div> */}
+        <Content />   <Classs /> */}
+        {/* <Classcontent /> */} {/*<ControlledInput /> */}
+      
     </div>
   );
 }

@@ -44,6 +44,7 @@
 .ico-col {
   height: 40px;
   width: 40px;
+  filter: drop-shadow(0px 10px 5px #4a4c4c75);
   transform: translateY(-50%);
   background: #27dba5;
   border-radius: 50%;
